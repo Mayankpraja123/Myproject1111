@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejs</title>
+ <link rel="stylesheet" href="css/product.css"> 
+
+</head>
+
+<body class="backgroundColor">
+<div>
+<!-- javacript syntax is wwriten nin
+<% %> format   -->
+<!-- 
+<% products.forEach(product=> { %>
+<p onclick="clickProductName(<% JSON.stringify(product) %>)">
+<%= product.name %>
+</p>
+<p><%= product.price %></p>
+<p><a href="products/<%= product._id %>" Click here </a>
+</p>
+<% }) %> -->
+<!-- <% products.forEach(product => { %>
+    <p><%= product.name %>  </p>
+    <p><%= product.price %> </p>
+<% }) %> -->
+<% products.forEach(product => { %>
+    <p onclick="clickProductName('<%= JSON.stringify(product) %>')">
+        <%= product.username %> 
+    </p>
+    
+    <p><%= product.password %> </p>
+    <p>
+        <a href="products/<%= products._id %> ">click here</a>
+    </p>
+<% }) %>
+
+</div>
+
+<!-- <script src="js/products.js">
+    function clickProductName(product){
+        const newProduct = JSON.parse(product);
+        console.log("name::",newProduct.name)
+    }
+</script> -->
+<script src="js/product.js">
+    // function clickProductName(product){
+    //     const newProduct = JSON.parse(product);
+    //     console.log("newproduct",newProduct.name)
+    // }
+</script>
+
+</body>
+</html>

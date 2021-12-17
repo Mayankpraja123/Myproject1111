@@ -1,0 +1,20 @@
+{
+  "name": "Myproject1111",
+  "version": "1.0.0",
+  "description": "project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayankpraja123/Myproject1111.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mayankpraja123/Myproject1111/issues"
+  },
+  "homepage": "https://github.com/Mayankpraja123/Myproject1111#readme"
+}
